@@ -1,0 +1,46 @@
+package tp03.ejercicio1;
+
+public class Parcial3 {
+
+	
+	public Integer sumaImparesPosOrderMayorA(ArbolBinario<Integer> ab, int limite) {
+		Integer cant = 0;
+		
+		
+		return cant;
+	}
+	
+	private Integer resolver(ArbolBinario<Integer> ab, int limite) {
+		if (ab.esHoja()){
+			if (ab.getDato() % 2 != 0 && (ab.getDato() > limite) ){
+				return ab.getDato();
+			}
+		}else {
+			Integer cant = 0;
+			if (ab.tieneHijoIzquierdo()) {
+				cant += resolver(ab.getHijoIzquierdo(),limite);
+			}
+			if (ab.tieneHijoDerecho()) {
+				cant += resolver(ab.getHijoIzquierdo(),limite);
+			}
+			if (ab.getDato() % 2 != 0 && (ab.getDato() > limite)) {
+				cant+= ab.getDato();
+			}
+		
+		
+		return cant;
+		}
+	}
+	
+	private Integer resolver2(ArbolBinario<Integer> ab, int limite) {
+		if (ab.esVacio()) {
+			return 0;
+		}else {
+			Integer cant = 0;
+			cant += resolver2(ab.getHijoIzquierdo(),limite) + resolver2(ab.getHijoDerecho(),limite) 
+			
+				
+			}
+		}
+	}
+}

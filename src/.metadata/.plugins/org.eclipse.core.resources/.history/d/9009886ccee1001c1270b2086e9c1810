@@ -1,0 +1,47 @@
+package tp03.ejercicio1;
+
+import tp02.ejercicio2.ListaGenerica;
+
+public class ejer3 {
+
+	
+	public ListaGenerica<Integer> contadorPar(ArbolBinario<Integer> arbol){
+		ListaGenerica<Integer> lista = new ListaGenericaEnlazada<Integer>();
+		InOrden(lista,arbol);
+		PosOrden(lista,arbol);
+		return lista;
+	}
+	
+	
+	private int InOrden (ListaGenerica<Integer> lista,ArbolBinario<Integer> a){
+		int cant = 0;
+		if (a.tieneHijoIzquierdo()) {
+			InOrden(lista,a.getHijoIzquierdo());
+		}
+		if (a.getDato() % 2 == 0) {
+			lista.agregarFinal(a.getDato());
+		}
+		if (a.tieneHijoDerecho()) {
+			InOrden(lista,a.getHijoDerecho());
+		}
+		return cant;
+	}
+	
+	private int PosOrden (ListaGenerica<Integer> lista,ArbolBinario<Integer> a){
+		int cant = 0;
+		if (a.getDato() % 2 == 0) {
+			lista.agregarFinal(a.getDato());
+		}
+		if (a.tieneHijoIzquierdo()) {
+			PosOrden(lista,a.getHijoIzquierdo());
+		}
+		if (a.tieneHijoDerecho()) {
+			PosOrden(lista,a.getHijoDerecho());
+		}
+		return cant;
+	
+	
+	}
+}
+	
+	

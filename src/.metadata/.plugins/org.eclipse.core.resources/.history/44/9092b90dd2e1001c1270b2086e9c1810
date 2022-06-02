@@ -1,0 +1,27 @@
+package tp03.ejercicio1;
+
+public class parcialBruno {
+	
+	
+	
+	public Integer resolver(ArbolBinario<Integer> a) {
+		
+			Integer resultado = resuelvo(a);
+		
+		return resultado;
+		
+	}
+
+	
+	private Integer resuelvo ( ArbolBinario<Integer> a) {
+		Integer cant = 0;
+		
+		if (a.tieneHijoIzquierdo()) {
+			cant += resuelvo(a.getHijoIzquierdo());
+		}
+		if (a.tieneHijoDerecho()) {
+			cant += resuelvo(a.getHijoDerecho());
+		}
+		if (a.esHoja())
+	}
+}

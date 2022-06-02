@@ -1,0 +1,22 @@
+package tp03.ejercicio1;
+
+import tp02.ejercicio2.ListaEnlazadaGenerica;
+
+public class Parcial4 {
+
+	private ArbolGeneral<Integer> a;
+	
+	
+	public ListaGenerica<Integer> resolver(){
+		ListaGenerica<ListaGenerica<Integer>> lista = new ListaEnlazadaGenerica<ListaGenerica<Integer>>();
+		int cant = 0;
+		ListaGenerica<Integer> listaNormal = new ListaEnlazadaGenerica<Integer>();
+		resolver(cant,a,lista,listaNormal);
+		
+		return lista;
+	}
+	
+	private void resolver(int cant, ArbolGeneral<Integer> a,ListaGenerica<ListaGenerica<Integer>> lista, ListaGenerica<Integer> listaNormal) {
+		
+	}
+}

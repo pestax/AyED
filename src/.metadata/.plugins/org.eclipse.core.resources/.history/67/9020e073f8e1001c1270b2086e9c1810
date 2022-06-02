@@ -1,0 +1,13 @@
+package tp03.ejercicio1;
+
+import tp02.ejercicio2.ListaEnlazadaGenerica;
+
+public class Parcial2 {
+
+	
+	public ListaGenerica<ListaGenerica<Character>> caminosPares(ArbolGeneral<Character> arbol){
+		ListaGenerica<ListaGenerica<Character>> lista = new ListaEnlazadaGenerica<ListaGenerica<Character>>();
+		int cant =0;
+		ListaGenerica<Character> listaNormal = new ListaEnlazadaGenerica<Character>();
+	}
+}

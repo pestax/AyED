@@ -1,0 +1,37 @@
+package tp03.ejercicio1;
+
+public class ejer3 {
+
+	
+	public void contadorPar(ArbolBinario<Integer> arbol){
+		System.out.println("Recorrido InOrden" + this.InOrden(arbol));
+		System.out.println("Recorrido PosOrden" + this.PosOrden(arbol));
+		
+		
+	}
+	
+	
+	private int InOrden (ArbolBinario<Integer> a){
+		int cant = 0;
+		if (a.tieneHijoIzquierdo()) {
+			InOrden(a.getHijoIzquierdo());
+		}
+		if (a.getDato() % 2 == 0) {
+			cant ++
+		}
+		if (a.tieneHijoDerecho()) {
+			InOrden(a.getHijoDerecho());
+		}
+		return cant;
+	}
+	
+	private int PosOrden (ArbolBinario<Integer> a){
+		int cant = 0;
+		if (a.getDato() % 2 == 0) {
+			cant ++;
+		}
+		
+		return cant;
+	
+	
+}

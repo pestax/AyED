@@ -1,0 +1,22 @@
+INDEX VERSION 1.131+C:\Users\Bruno\Desktop\Nueva carpeta\AyED\src\.metadata\.plugins\org.eclipse.jdt.core
+3187031385.index
+3239923045.index
+3807526952.index
+3685677984.index
+3466370666.index
+996534721.index
+766958495.index
+30972612.index
+3708437767.index
+421282516.index
+1865797976.index
+1935857992.index
+960332240.index
+3719127545.index
+4145973420.index
+656929741.index
+4035558678.index
+3173200398.index
+697015044.index
+4099924648.index
+1645662457.index

@@ -1,0 +1,23 @@
+package tp03.ejercicio1;
+
+public class ejer3 {
+
+	
+	public int contadorPar(){
+		
+		
+		
+		return a;
+	}
+	
+	
+	private int InOrden (ArbolBinario<Integer> a){
+		int cant = 0;
+		
+		
+		return cant;
+		
+	}
+	
+	
+}

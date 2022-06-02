@@ -1,0 +1,9 @@
+package tp03.ejercicio1;
+
+public class Parcial2 {
+
+	
+	public ListaGenerica<ListaGenerica<Character>> caminosPares(ArbolGeneral<Character> arbol){
+		
+	}
+}

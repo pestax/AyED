@@ -1,0 +1,11 @@
+package tp03.ejercicio1;
+
+public class ejer3 {
+
+	
+	public ArbolBinario<Integer> contadorPar(){
+		ArbolBinario<Integer> a = new ArbolBinario <Integer>();
+		
+		return a;
+	}
+}

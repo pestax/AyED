@@ -1,0 +1,11 @@
+package tp03.ejercicio1;
+
+public class Parcial4 {
+
+	private ArbolGeneral<Integer> a;
+	
+	
+	public ListaGenerica<Integer> resolver(){
+		ListaGenerica<ListaGenerica<Integer>> lista
+	}
+}

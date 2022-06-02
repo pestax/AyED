@@ -1,0 +1,11 @@
+package tp03.ejercicio1;
+
+public class Parcial3 {
+
+	
+	public Integer sumaImparesPosOrderMayorA(ArbolBinario<Integer> ab, int limite) {
+		Integer cant = 0;
+		
+		return cant;
+	}
+}

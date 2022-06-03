@@ -1,0 +1,23 @@
+package tp03.ejercicio1;
+
+public class parcial5 {
+
+	
+	public ListaGenerica<ListaGenerica<Integer>> inicio (ArbolBinario<Integer> a){
+		ListaGenerica<ListaGenerica<Integer>> lista = new ListaEnlazadaGenerica<ListaGenerica<Integer>>();
+		int desc = 0;
+		ListaGenerica<Integer> listaAux = new ListaEnlazadaGenerica<Integer>();
+		listaAux.agregarInicio(a.getDato());
+		resolver(desc,a,lista,listaAux);
+		
+		
+		return lista;
+	}
+	
+	
+	
+	private void resolver(int desc, ArbolBinario<Integer> a, ListaGenerica<ListaGenerica<Integer>> lista, ListaGenerica<Integer> listaAux) {
+		
+		
+	}
+}

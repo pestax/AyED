@@ -1,0 +1,39 @@
+package tp03.ejercicio1;
+
+public class parcial5 {
+
+	
+	public ListaGenerica<Integer> inicio (ArbolBinario<Integer> a){
+		ListaGenerica<Integer> lista = new ListaEnlazadaGenerica<Integer>();
+		
+		
+		resolver(a,lista);
+		
+		return lista;
+	}
+	
+	
+	
+	private Integer resolver (ArbolBinario<Integer> a, ListaGenerica<Integer> lista) {
+		int cant =0;
+		int cantHi = 0;
+		int cantHd = 0;
+		if (a.esHoja()) 
+			l.agregarFinal(a.getDato());
+		else {
+			if (a.tieneHijoIzquierdo()) {
+				cantizq+= resolver(a.getHijoIzquierdo(),l);
+				cant+= cantizq;
+			}
+			if (a.tieneHijoDerecho()) {
+				cantder+= resolver(a.getHijoDerecho(),l);
+				cant+=cantder;
+			}
+			if (cantder == cantizq)
+				l.agregarFinal(a.getDato());
+		}
+		return cant + 1;
+		return cant + 1;
+		
+	}
+}

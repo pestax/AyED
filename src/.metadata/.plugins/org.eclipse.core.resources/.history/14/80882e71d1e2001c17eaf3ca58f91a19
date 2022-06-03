@@ -1,0 +1,25 @@
+package tp03.ejercicio1;
+
+public class parcial5 {
+
+	
+	public ListaGenerica<Integer> inicio (ArbolBinario<Integer> a){
+		ListaGenerica<Integer> lista = new ListaEnlazadaGenerica<Integer>();
+		
+		
+		resolver(a,lista);
+		
+		return lista;
+	}
+	
+	
+	
+	private void resolver (ArbolBinario<Integer> a, ListaGenerica<Integer> lista) {
+		int cant =0;
+		int cantHi = 0;
+		int cantHd = 0;
+		
+		
+		
+	}
+}

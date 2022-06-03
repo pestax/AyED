@@ -1,0 +1,14 @@
+package tp03.ejercicio1;
+
+public class parcial5 {
+
+	
+	public ListaGenerica<ArbolBinario<Integer>> resolver (ArbolBinario<Integer> a){
+		ListaGenerica<ListaGenerica<Integer>> lista = new ListaEnlazadaGenerica<ListaGenerica<Integer>>();
+		
+		
+		
+		return null;
+		
+	}
+}

@@ -1,0 +1,37 @@
+package tp03.ejercicio1;
+
+public class parcial7 {
+	
+	
+	public ListaGenerica<Integer> Parcial (ArbolGeneral<Integer> arbol){
+		ListaGenerica<Integer> lista = new ListaEnlazadaGenerica<Integer>();
+		if (!arbol.esVacio()) {
+			privado_Parcial(arbol,lista);
+			return lista;
+		}
+		return null;		
+	}
+
+	private void privado_Parcial(ArbolGeneral<Integer> arbol, ListaGenerica<Integer> lista) {
+		if (arbol.esHoja()) {
+			lista.agregarFinal(arbol.getDato());
+		}else
+		{
+			int indice = arbol.getDato();
+			ListaGenerica<ArbolGeneral<Integer>> hijos = arbol.getHijos();
+			privado_Parcial(hijos.elemento(indice),lista);
+			lista.agregarInicio(arbol.getDato());
+		}
+	}
+	
+	
+	private void res2(ArbolGeneral<Integer> arbol, ListaGenerica<Integer> lista) {
+		lista.agregarFinal(arbol.getDato());
+		int indice = arbol.getDato();
+		if (arbol.tieneHijos()) {
+			ListaGenerica<ArbolGeneral<Integer>> hijos = arbol.getHijos();
+			privado_Parcial(hijos.elemento(indice),lista);
+		}
+	
+	}
+}

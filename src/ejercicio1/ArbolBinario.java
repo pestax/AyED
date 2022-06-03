@@ -118,7 +118,7 @@ public class ArbolBinario<T> {
 
 	public void entreNiveles(int n, int m){
 		int nivel = 0;
-		ColaGenerica<ArbolBinario<T>> cola = new ColaGenerica<>(new ListaEnlazadaGenerica<>());
+		ColaGenerica<ArbolBinario<T>> cola = new ColaGenerica<>();
 		cola.encolar(this);
 		cola.encolar(null);
 		
